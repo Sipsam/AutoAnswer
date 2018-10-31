@@ -90,8 +90,12 @@ namespace sipsam{
 				}
 			}
 		}
-		public function onDisable(){
-			unset($this->mod);
+		public function onQuit(\pocketmine\event\player\PlayerQuitEvent $event){
+			foreach($this->mod as $k => $v){
+				if($k === $event->getPlayer()->getName()){
+					unset($this->mod[$k]);
+				}
+			}
 		}
 	}
 }
