@@ -3,8 +3,8 @@
  * @name AutoAnswer
  * @main sipsam\AutoAnswer
  * @author sipsam1
- * @version 1
- * @api 3.0.0-ALPHA10
+ * @version 1.0.1
+ * @api 4.0.0
  */
 namespace sipsam{
 	class AutoAnswer extends \pocketmine\plugin\PluginBase implements \pocketmine\event\Listener{
